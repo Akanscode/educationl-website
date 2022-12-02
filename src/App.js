@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+//import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+//import Header from "./CommonComponent/HeadComponent/Heading";
+
+//import router from "react-router-dom";
+//import Home from "./Home/Home";
+//import About from "./About/About";
+//import CoursesHome from "./CoursesCard/CoursesHome";
+//import Price from "./Pricing/Price";
+//import Blog from "./Blog/Blog";
+import Home from "./Home/Home";
+//import Pricing from "./Pricing/Price";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+        <Home />
+
+        {/* <BrowserRouter>
+          <Router>
+           <Pricing />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/courses" component={CoursesHome} />
+            <Route exact path="/price" component={Price} />
+            <Route exact path="/journal" component={Blog} />
+          </Router>
+        </BrowserRouter>
+        <Router>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/courses" component={CoursesHome} />
+          <Route exact path="/price" component={Price} />
+          <Route exact path="/journal" component={Blog} />
+        </Router>*/}
+      </>
     </div>
   );
 }
